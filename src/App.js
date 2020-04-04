@@ -2,6 +2,7 @@ import React, {Fragment, useState, useEffect} from 'react';
 import Header from './components/Header';
 import Formulario from './components/Formulario';
 import ListadoNoticias from './components/ListadoNoticias';
+import Footer from './components/Footer';
 
 function App() {
   
@@ -23,12 +24,12 @@ function App() {
   },[categoria]);
   return (
     <Fragment>
-      <Header titulo='Buscador de noticias' />
-      <div className="container white">
+      <Header titulo='Noticias' />
+      <div className="container white s12">
         <Formulario setCategoria={setCategoria} />
         <ListadoNoticias noticias={noticias} />
       </div>
-
+      <Footer />
     </Fragment>
   );
 }
