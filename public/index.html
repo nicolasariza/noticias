@@ -24,7 +24,16 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+
+    <title>Buscador Noticias React</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700,900"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,4 +49,31 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <footer style="position: fixed; bottom: 0; width: 100%;">
+    <nav class="z-depth-0 light-blue darken-3">
+      <div class="nav-wrapper">
+        <div class="footer-copyright">
+          <div class="container">
+            <a
+              class="grey-text text-lighten-4"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://newsapi.org/"
+              >Powered by News API</a
+            >
+            <div class="right">
+              2020 -<a
+                class="grey-text text-lighten-4 right"
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/nicolasariza/"
+              >
+                &nbsp;Nicolas Ariza</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </footer>
 </html>
